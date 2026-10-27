@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <hr class="centrar ancho2">
+
+  <div class="contenedor_imagenes ancho margen">
+    <div class="contenedor_logo">
+      <img src="imagenes/logocabecera.jpg" alt="Logo del espa">
+    </div>
+
+    <div class="contenedor_redes">
+      <img src="imagenes/icono_facebook.jpg" alt="">
+    <img src="imagenes/icono_instagram.jpg" alt="">
+    <img src="imagenes/icono_twitter.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="contenedor_menu ancho margen centrar">
+    <a href="">GALERIA</a>
+    <a href="">PRECIOS</a>
+    <a href="">CONTACTANOS</a>
+    <a href="">EQUIPO</a>
+  </div>
+
+  <div class="contenedor_principal ancho margen centrar">
+    <h1>PROMOCIONES DE MARZO</h1>
+    <p>Se acerca la epoca de playa y por eso preparamos estas dos <br> promociones ideales para ti. </p>
+    <a href="" class="boton1">Solicitar Promoción</a> <a class="boton2" href="https://youtu.be/w4qaODLR_Xg?si=TOqUGmWLNQwtsvWN">Ver Video</a>
+  </div>
+
+  <div class="contenedor_productos ancho margen ">
+    <div class="contenedor_texto">
+      <h2>Los productos Science of Beauty</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis dolor ratione eaque, sit, alias rem distinctio debitis ut totam laborum impedit non esse? Tempore asperiores numquam, molestias quo adipisci incidunt.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nesciunt delectus quae omnis accusamus dignissimos nobis natus quasi. Animi sint dolorem suscipit, sed quisquam molestiae debitis natus earum.
+      </p>
+    </div>
+
+    <div class="imagen_vela">
+      <img src="imagenes/fotovelas.jpg" alt="Velas">
+    </div>
+  </div>
+
+  <div class="contenedor_talento ancho margen">
+    <h2 class="centrar">Buscamos talento para integrarlos a nuestro equipo</h2>
+    <br>
+    <div class="imagen_aromatizante">
+      <img src="imagenes/fotoaromatizante.jpg" alt="">
+    </div>
+
+    <div class="contenedor_informacion">
+      <h3>Puesto de trabajo para Recepcionista</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum numquam maiores neque culpa, est quod eos assumenda esse obcaecati labore tempora consectetur corrupti natus ratione non sed, saepe temporibus? Omnis!</p>
+      <br>
+      <h3>Puesto de trabajo para Masajista</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsam reprehenderit, fugit laudantium neque sed enim adipisci illum nesciunt quisquam excepturi in provident. Aliquid, incidunt sint iusto quisquam fugit recusandae!</p>
+      <br>
+      <h3>Puesto de trabajo para Nutriologo</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint eaque placeat incidunt id quia maiores obcaecati, doloremque cupiditate vero veritatis voluptates impedit ab ratione eveniet, harum ex minus error?</p>
+    </div>
+  </div>
+
+  <div class="contenedor_ultimo ancho margen">
+    <div class="contenedor_formulario">
+      <h2>Recibe noticias y promociones de SPA SALON</h2>
+      <p>Un lugar para consentirte de pies a cabeza. Servicio de salón estética y Spa personalizado</p>
+      <br>
+      <p> <span class="rosa">TELEFONO:</span>999 420 8871</p>
+      <br>
+      <p><span class="rosa">CORREO:</span> info@spasalon.com</p>
+      <br>
+      <form action="respuesta.php" method="get" id="formulario">
+        <h3>Tu direccion de correo electronico</h3>
+        <input type="email" id="email" placeholder="*tunombre@example.com">
+        <button id="btn_validar" type="button">Enviar</button>
+      </form>
+    </div>
+
+    <div class="contenedor_instalaciones">
+      <h2>Nuestras instalaciones</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/w4qaODLR_Xg?si=f7pQDomcxvVaZGMt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="pie_pagina ancho margen">
+    <div class="contenedor_circular">
+      <img src="imagenes/logo_spa.png" alt="">
+    </div>
+
+    <div class="contenedor_datos">
+      <p class="rosa">Brayam Alexander Cauich Arjona <br>Programación web <br>
+      7SA</p>
+    </div>
+  </div>
+
+  <hr class="ancho2">
+</body>
+</html>
+
+
+<!-- Validacion del email -->
+ <script>
+  $("#btn_validar").click(function() {
+    if($("#email").val().trim()=='') {
+        alert("Escribe tu email ");
+        $("#email").focus();
+        return 0;
+      }
+
+      let expresionCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!expresionCorreo.test($("#email").val().trim())){
+        alert("Escribe un email valido");
+        $("#email").focus();
+        return false
+      }
+    $("#formulario").submit();
+  });
+ </script>

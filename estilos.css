@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.ancho {
+  width: 1200px;
+  margin: 20px auto;
+  /* border: 2px red solid; */
+}
+
+.ancho2{
+  width: 1200px;
+  margin: auto;
+}
+
+.margen {
+  padding: 15px;
+}
+
+hr{
+  background-color:  #ff3281;
+  height: 20px;
+  width: 1200px;
+}
+
+/* Contenedor de las imagenes */
+.contenedor_imagenes{
+  background-color: #fff9f1 ;
+}
+
+
+.contenedor_logo{
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+
+.contenedor_redes{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+}
+
+.contenedor_redes img{
+  margin-left: 20px;
+}
+
+/* Contenedor menu */
+.contenedor_menu{
+  border: 2px black solid;
+  width: 1100px;
+  
+}
+
+.contenedor_menu a{
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 90px;
+  margin-left: 90px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Contenedor principal */
+
+.contenedor_principal{
+  background-image: url(imagenes/fondopiedras.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.contenedor_principal h1{
+  color: white;
+  line-height: 40px;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.contenedor_principal p{
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contenedor_principal a{
+  margin-right: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.boton1{
+  border: 2px;
+  background-color: #ff3281;
+  padding: 10px;
+}
+
+.boton2{
+  border: 2px #ff3281 solid;
+  padding: 10px;
+}
+
+/* Contenedor productos */
+
+.contenedor_texto{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-left:  60px;
+}
+
+.contenedor_texto h2{
+  margin-bottom: 40px;
+}
+
+.contenedor_texto p{
+  line-height: 2.5;
+}
+
+.imagen_vela{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+.imagen_vela img{
+  width: 100%;
+}
+
+/* Contenedor_talento */
+
+.contenedor_talento{
+  background-color: #fff9f1;
+}
+
+.imagen_aromatizante{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  padding-left:  60px;
+}
+
+.imagen_aromatizante img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contenedor_informacion{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  line-height: 1.5;
+  ;
+  margin-left: 10px;
+}
+
+/* Contenedor ultimo */
+
+.contenedor_formulario{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-left: 60px;
+}
+
+.rosa{
+  color: #ff3281;
+  font-weight: bold;
+}
+
+form{
+  border: 3px #ff3281 solid;
+  width: 80%;
+}
+
+form input:focus{
+  background-color: #e1f3f7;
+}
+
+form  h3{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+form input{
+  width: 90%;
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-left: 10px;
+  display: block;
+}
+
+form button{
+  width: 40%;
+  padding: 15px 15px;
+  margin-bottom: 12px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  display: block;
+}
+.contenedor_instalaciones{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  padding-right: 30px;
+}
+
+.contenedor_instalaciones h2{
+  font-size: 30px;
+}
+.contenedor_instalaciones iframe{
+  margin-top: 20px;
+
+}
+
+/* pie de página */
+
+.pie_pagina{
+  background-color: #fff9f1;
+}
+
+.contenedor_circular{
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+
+.contenedor_datos{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+
+}
